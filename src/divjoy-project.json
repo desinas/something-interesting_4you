@@ -1,0 +1,1777 @@
+{
+  "data": [
+    {
+      "type": "instance",
+      "name": "App",
+      "componentId": "app",
+      "id": 762478,
+      "canHaveChildren": true,
+      "isVisible": true,
+      "attributes": "{\n\n}",
+      "tags": [],
+      "image": "",
+      "inline": true
+    }
+  ],
+  "components": [
+    {
+      "id": "app",
+      "name": "App",
+      "type": "component",
+      "canHaveChildren": true,
+      "isVisible": true,
+      "componentType": "function",
+      "code": "",
+      "defaultProps": "{\n\n}",
+      "initialState": "{\n\n}",
+      "methods": "{\n\n}",
+      "globalStyle": "body, #root, #__next {\n  // Flex body allows for sticky footer and other\n  // advanced layouts. Remove if not needed.\n  display: flex;\n  min-height: 100vh;\n  flex-direction: column;\n}\n\n.section-header {\n  margin-bottom: 3rem;\n}\n\n.navbar {\n  &.is-spaced {\n    @media screen and (min-width: 1088px){\n      padding-top: 1.7rem;\n      padding-bottom: 1.7rem;\n    }\n  }\n}\n\n.container {\n  // Don't increase container width at fullHD\n  // breakpoint. Too wide for this theme.\n  @media screen and (min-width: 1472px){\n    max-width: 1152px;\n  }\n}\n\n// Increase padding on medium section.\n.section {\n  &.is-medium {\n    @media screen and (min-width: 769px) {\n      padding-top: 5rem;\n      padding-bottom: 5rem;\n    }\n  }\n}\n\n// Wrapper around section title/subtitle with\n// extra bottom margin.\n// Center everything by default\n.section-header {\n  margin-bottom: 3rem;\n  text-align: center;\n}\n\n// Override card style\n.card {\n  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12);\n}\n.card-content {\n  padding: 2rem;\n}\n\n// Override button style\n.button {\n  font-size: 0.8rem;\n  text-transform: uppercase;\n  font-weight: 700;\n  padding: 1.1em 2em;\n  height: auto;\n  box-shadow: 0 4px 6px rgba(50,50,93,.1), 0 1px 3px rgba(0,0,0,.08);\n  \n  &.is-normal {\n    font-size: 0.8rem;\n  }\n  \n  &.is-medium {\n    font-size: 0.9rem;\n  }\n  \n  &.is-large {\n    font-size: 1rem;\n  }\n  \n  &:hover {\n    transform: translateY(-1px);\n    box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);\n  }\n  \n  // Change color on primary modifier\n  &.is-primary {\n    background-color: #6a3ea4;\n    &:hover {\n      background-color: #7c41cb;\n    }\n    &.is-inverted {\n      color: #7c41cb;\n    }\n  }\n}",
+      "children": [
+        {
+          "type": "instance",
+          "subtype": "page-instance",
+          "componentId": 1640600,
+          "canHaveChildren": true,
+          "isVisible": true,
+          "attributes": "{\n\n}",
+          "tags": [],
+          "image": "",
+          "inline": true,
+          "id": 5546120
+        },
+        {
+          "type": "instance",
+          "componentId": 7454246,
+          "tags": [
+            "Popular",
+            "Hero"
+          ],
+          "image": "hero.png",
+          "canHaveChildren": true,
+          "isVisible": true,
+          "inline": true,
+          "id": 2954164,
+          "forkedId": 5269283,
+          "attributes": "{\n  // Main title\n\ttitle: \"Κάτι που ίσως σας ενδιαφέρει\",\n  // Smaller text under title\n  subtitle: \"Πληροφορίες για μεταχειρισμένα μηχανήματα βιοτεχνίας, που θα σας δώσουν την δυνατότητα επέκτασης των δραστηριοτήτων της επιχείρησής σας!\",\n  // Limit image size when displayed\n  // under button at 1088px screen width\n  imageMaxWidth: '600px',\n  // Button text\n  buttonText: \"Get Started\",\n  // Button size (normal, medium, large)\n  buttonSize: \"medium\",\n  // Button click handler\n  buttonOnClick: () => {\n    // Scroll down to pricing section\n    const el = document.getElementById(\"pricing\");\n    el.scrollIntoView({ behavior: 'smooth', block: 'start' });\n  }\n}"
+        },
+        {
+          "type": "instance",
+          "componentId": 2678941,
+          "tags": [
+            "Popular",
+            "Features"
+          ],
+          "image": "features-grid.png",
+          "attributes": "{\n\ttitle: \"Features\",\n  subtitle: \"\",\n  backgroundColor: \"#f7f7f7\"\n}",
+          "canHaveChildren": true,
+          "isVisible": true,
+          "inline": true,
+          "id": 7418851,
+          "forkedId": 9121720
+        },
+        {
+          "type": "instance",
+          "componentId": 8566452,
+          "tags": [
+            "Content"
+          ],
+          "image": "blog.png",
+          "canHaveChildren": true,
+          "isVisible": true,
+          "attributes": "{\n\n}",
+          "inline": true,
+          "id": 8492595,
+          "forkedId": 7586714
+        },
+        {
+          "type": "instance",
+          "componentId": 4279952,
+          "attributes": "{\n\ttitle: \"You're in good company\",\n  subtitle: \"\"\n}",
+          "tags": [
+            "Popular"
+          ],
+          "image": "clients-section.png",
+          "canHaveChildren": true,
+          "isVisible": true,
+          "inline": true,
+          "id": 4867494,
+          "forkedId": 5452417
+        },
+        {
+          "type": "instance",
+          "componentId": 6019767,
+          "tags": [
+            "Form",
+            "Popular"
+          ],
+          "image": "newsletter-signup.png",
+          "attributes": "{\n\ttitle: \"Newsletter\",\n  subtitle: \"Stay up to date on important announcements\",\n  buttonText: \"Subscribe\",\n  inputPlaceholder: \"Enter your email\",\n  showInputIcon: true,\n  showSpamFreeArrow: true,\n  subscribedMessage: \"You are now subscribed!\"\n}",
+          "canHaveChildren": true,
+          "isVisible": true,
+          "inline": true,
+          "id": 2571123,
+          "forkedId": 4353732
+        }
+      ]
+    },
+    {
+      "type": "component",
+      "subtype": "page-component",
+      "canHaveChildren": true,
+      "isVisible": true,
+      "name": "",
+      "componentType": "function",
+      "code": "",
+      "defaultProps": "{\n\n}",
+      "initialState": "{\n\n}",
+      "methods": "{\n\n}",
+      "id": 1640600,
+      "path": "",
+      "children": []
+    },
+    {
+      "type": "component",
+      "name": "Hero",
+      "id": 7454246,
+      "componentType": "function",
+      "nameLibrary": "Hero",
+      "canHaveChildren": true,
+      "isVisible": true,
+      "code": "",
+      "defaultProps": "{\n\n}",
+      "initialState": "{\n\n}",
+      "methods": "{\n\n}",
+      "children": [
+        {
+          "type": "element",
+          "tagName": "section",
+          "classNames": [
+            "section"
+          ],
+          "canHaveChildren": true,
+          "isVisible": true,
+          "attributes": "{\n\n}",
+          "tags": [],
+          "image": "",
+          "name": "",
+          "classNameExpressions": [],
+          "style": "",
+          "id": 6637944,
+          "forkedId": 1252791,
+          "children": [
+            {
+              "type": "element",
+              "tagName": "div",
+              "classNames": [
+                "container"
+              ],
+              "canHaveChildren": true,
+              "isVisible": true,
+              "attributes": "{\n\n}",
+              "tags": [],
+              "image": "",
+              "name": "",
+              "classNameExpressions": [],
+              "style": "",
+              "id": 3338510,
+              "forkedId": 4528829,
+              "children": [
+                {
+                  "type": "element",
+                  "tagName": "div",
+                  "classNames": [
+                    "columns",
+                    "is-vcentered",
+                    "is-desktop"
+                  ],
+                  "canHaveChildren": true,
+                  "isVisible": true,
+                  "attributes": "{\n\n}",
+                  "tags": [],
+                  "image": "",
+                  "name": "",
+                  "classNameExpressions": [],
+                  "style": "",
+                  "id": 3303129,
+                  "forkedId": 6336203,
+                  "children": [
+                    {
+                      "type": "element",
+                      "tagName": "div",
+                      "classNames": [
+                        "column",
+                        "is-5-desktop",
+                        "has-text-centered-touch"
+                      ],
+                      "canHaveChildren": true,
+                      "isVisible": true,
+                      "attributes": "{\n\n}",
+                      "tags": [],
+                      "image": "",
+                      "name": "",
+                      "classNameExpressions": [],
+                      "style": "",
+                      "id": 2914320,
+                      "forkedId": 8633351,
+                      "children": [
+                        {
+                          "type": "element",
+                          "tagName": "header",
+                          "name": "Header",
+                          "style": "margin-bottom: 2rem;",
+                          "canHaveChildren": true,
+                          "isVisible": true,
+                          "attributes": "{\n\n}",
+                          "tags": [],
+                          "image": "",
+                          "classNames": [],
+                          "classNameExpressions": [],
+                          "id": 4512820,
+                          "forkedId": 9784374,
+                          "children": [
+                            {
+                              "type": "element",
+                              "tagName": "h1",
+                              "classNames": [
+                                "title",
+                                "is-spaced",
+                                "is-1",
+                                "has-text-weight-bold"
+                              ],
+                              "canHaveChildren": true,
+                              "isVisible": true,
+                              "attributes": "{\n\n}",
+                              "tags": [],
+                              "image": "",
+                              "name": "",
+                              "classNameExpressions": [],
+                              "style": "",
+                              "id": 5618900,
+                              "forkedId": 7295279,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "canHaveChildren": false,
+                                  "text": "{props.title}",
+                                  "isVisible": true,
+                                  "id": 8067731,
+                                  "forkedId": 443882
+                                }
+                              ]
+                            },
+                            {
+                              "type": "element",
+                              "tagName": "p",
+                              "classNames": [
+                                "subtitle"
+                              ],
+                              "style": "max-width: 700px;\nmargin: 0 auto;",
+                              "canHaveChildren": true,
+                              "isVisible": true,
+                              "attributes": "{\n\n}",
+                              "tags": [],
+                              "image": "",
+                              "name": "",
+                              "classNameExpressions": [],
+                              "id": 9045491,
+                              "forkedId": 9161842,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "canHaveChildren": false,
+                                  "text": "{props.subtitle}",
+                                  "isVisible": true,
+                                  "id": 7207475,
+                                  "forkedId": 8616515
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "element",
+                      "tagName": "div",
+                      "classNames": [
+                        "column"
+                      ],
+                      "canHaveChildren": true,
+                      "isVisible": true,
+                      "attributes": "{\n\n}",
+                      "tags": [],
+                      "image": "",
+                      "name": "",
+                      "classNameExpressions": [],
+                      "style": "",
+                      "id": 7246206,
+                      "forkedId": 4192907,
+                      "children": [
+                        {
+                          "type": "element",
+                          "tagName": "figure",
+                          "classNames": [
+                            "image"
+                          ],
+                          "style": "margin: 0 auto;",
+                          "attributes": "{\n\tstyle: {\n    maxWidth: props.imageMaxWidth\n  }\n}",
+                          "canHaveChildren": true,
+                          "isVisible": true,
+                          "tags": [],
+                          "image": "",
+                          "name": "",
+                          "classNameExpressions": [],
+                          "id": 3877539,
+                          "forkedId": 2917098,
+                          "children": [
+                            {
+                              "type": "element",
+                              "tagName": "img",
+                              "attributes": "{\n  src: 'https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/illustrations/japan_ubgk.svg'\n}",
+                              "canHaveChildren": false,
+                              "isVisible": true,
+                              "tags": [],
+                              "image": "",
+                              "name": "",
+                              "classNames": [],
+                              "classNameExpressions": [],
+                              "style": "",
+                              "id": 1016426,
+                              "forkedId": 9374725
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "component",
+      "name": "Clients Section",
+      "id": 4279952,
+      "componentType": "function",
+      "canHaveChildren": true,
+      "isVisible": true,
+      "code": "",
+      "defaultProps": "{\n\n}",
+      "initialState": "{\n\n}",
+      "methods": "{\n\n}",
+      "children": [
+        {
+          "type": "element",
+          "tagName": "section",
+          "classNames": [
+            "section"
+          ],
+          "canHaveChildren": true,
+          "isVisible": true,
+          "attributes": "{\n\n}",
+          "tags": [],
+          "image": "",
+          "name": "",
+          "classNameExpressions": [],
+          "style": "",
+          "id": 8930989,
+          "forkedId": 8132032,
+          "children": [
+            {
+              "type": "element",
+              "tagName": "div",
+              "classNames": [
+                "container"
+              ],
+              "canHaveChildren": true,
+              "isVisible": true,
+              "attributes": "{\n\n}",
+              "tags": [],
+              "image": "",
+              "name": "",
+              "classNameExpressions": [],
+              "style": "",
+              "id": 3704363,
+              "forkedId": 3474966,
+              "children": [
+                {
+                  "type": "element",
+                  "tagName": "header",
+                  "classNames": [
+                    "section-header",
+                    "has-text-centered"
+                  ],
+                  "canHaveChildren": true,
+                  "isVisible": true,
+                  "attributes": "{\n\n}",
+                  "tags": [],
+                  "image": "",
+                  "name": "",
+                  "classNameExpressions": [],
+                  "style": "",
+                  "id": 8845150,
+                  "forkedId": 74426,
+                  "children": [
+                    {
+                      "type": "element",
+                      "tagName": "h1",
+                      "classNames": [
+                        "title",
+                        "is-spaced"
+                      ],
+                      "canHaveChildren": true,
+                      "isVisible": true,
+                      "attributes": "{\n\n}",
+                      "tags": [],
+                      "image": "",
+                      "name": "",
+                      "classNameExpressions": [],
+                      "style": "",
+                      "id": 7187989,
+                      "forkedId": 4864829,
+                      "children": [
+                        {
+                          "type": "text",
+                          "canHaveChildren": false,
+                          "text": "{props.title}",
+                          "tags": [],
+                          "isVisible": true,
+                          "id": 6451603,
+                          "forkedId": 6850507
+                        }
+                      ]
+                    },
+                    {
+                      "type": "if",
+                      "js": "props.subtitle",
+                      "canHaveChildren": true,
+                      "isVisible": true,
+                      "id": 7211880,
+                      "forkedId": 4868385,
+                      "children": [
+                        {
+                          "type": "element",
+                          "tagName": "p",
+                          "classNames": [
+                            "subtitle"
+                          ],
+                          "canHaveChildren": true,
+                          "isVisible": true,
+                          "attributes": "{\n\n}",
+                          "tags": [],
+                          "image": "",
+                          "name": "",
+                          "classNameExpressions": [],
+                          "style": "",
+                          "id": 5153989,
+                          "forkedId": 2131426,
+                          "children": [
+                            {
+                              "type": "text",
+                              "canHaveChildren": false,
+                              "text": "{props.subtitle}",
+                              "tags": [],
+                              "isVisible": true,
+                              "id": 8818822,
+                              "forkedId": 6814110
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "instance",
+                  "componentId": 7285372,
+                  "attributes": "{\n  items: [\n    {\n      name: 'Instagram',\n      image: \"https://cdn.worldvectorlogo.com/logos/instagram.svg\",\n      width: \"150px\",\n    },\n    {\n      name: 'Slack',\n      image: \"https://cdn.worldvectorlogo.com/logos/slack.svg\",\n      width: \"135px\"\n    },\n    {\n      name: 'Tinder',\n      image: \"https://cdn.worldvectorlogo.com/logos/tinder-1.svg\",\n      width: \"90px\"\n    },\n    {\n      name: 'Spotify',\n      image: \"https://cdn.worldvectorlogo.com/logos/spotify-1.svg\",\n      width: \"135px\"\n    }\n  ]\n}",
+                  "canHaveChildren": true,
+                  "isVisible": true,
+                  "tags": [],
+                  "image": "",
+                  "inline": true,
+                  "id": 2325294,
+                  "forkedId": 4910055
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "component",
+      "name": "Clients",
+      "id": 7285372,
+      "componentType": "function",
+      "canHaveChildren": true,
+      "isVisible": true,
+      "code": "",
+      "defaultProps": "{\n\n}",
+      "initialState": "{\n\n}",
+      "methods": "{\n\n}",
+      "children": [
+        {
+          "type": "element",
+          "tagName": "div",
+          "classNames": [
+            "columns",
+            "is-centered",
+            "is-multiline"
+          ],
+          "canHaveChildren": true,
+          "isVisible": true,
+          "attributes": "{\n\n}",
+          "tags": [],
+          "image": "",
+          "name": "",
+          "classNameExpressions": [],
+          "style": "",
+          "id": 2485238,
+          "forkedId": 6429721,
+          "children": [
+            {
+              "type": "foreach",
+              "objectType": "array",
+              "valName": "item",
+              "indexName": "index",
+              "objectName": "props.items",
+              "canHaveChildren": true,
+              "isVisible": true,
+              "id": 4240318,
+              "forkedId": 4669131,
+              "children": [
+                {
+                  "type": "element",
+                  "tagName": "div",
+                  "classNames": [
+                    "column",
+                    "is-narrow"
+                  ],
+                  "style": "// Center brands when columns are ...\n// ... full width on mobile.\ntext-align: center;",
+                  "attributes": "{\n  key: index\n}",
+                  "canHaveChildren": true,
+                  "isVisible": true,
+                  "tags": [],
+                  "image": "",
+                  "name": "",
+                  "classNameExpressions": [],
+                  "id": 7965808,
+                  "forkedId": 9449685,
+                  "children": [
+                    {
+                      "type": "element",
+                      "tagName": "div",
+                      "style": "margin: 0 12px;",
+                      "name": "Logo",
+                      "canHaveChildren": true,
+                      "isVisible": true,
+                      "attributes": "{\n\n}",
+                      "tags": [],
+                      "image": "",
+                      "classNames": [],
+                      "classNameExpressions": [],
+                      "id": 4129792,
+                      "forkedId": 7828823,
+                      "children": [
+                        {
+                          "type": "element",
+                          "tagName": "img",
+                          "attributes": "{\n  src: item.image,\n  width: item.width\n}",
+                          "canHaveChildren": false,
+                          "isVisible": true,
+                          "tags": [],
+                          "image": "",
+                          "name": "",
+                          "classNames": [],
+                          "classNameExpressions": [],
+                          "style": "",
+                          "id": 4025462,
+                          "forkedId": 7128490
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "component",
+      "nameLibrary": "Features Grid",
+      "name": "Features Section",
+      "id": 2678941,
+      "componentType": "function",
+      "canHaveChildren": true,
+      "isVisible": true,
+      "code": "",
+      "defaultProps": "{\n\n}",
+      "initialState": "{\n\n}",
+      "methods": "{\n\n}",
+      "children": [
+        {
+          "type": "element",
+          "tagName": "section",
+          "classNames": [
+            "section",
+            "is-medium"
+          ],
+          "attributes": "{\n\tstyle: {\n    backgroundColor: props.backgroundColor\n  }\n}",
+          "canHaveChildren": true,
+          "isVisible": true,
+          "tags": [],
+          "image": "",
+          "name": "",
+          "classNameExpressions": [],
+          "style": "",
+          "id": 1727594,
+          "forkedId": 5213610,
+          "children": [
+            {
+              "type": "element",
+              "tagName": "div",
+              "classNames": [
+                "container"
+              ],
+              "canHaveChildren": true,
+              "isVisible": true,
+              "attributes": "{\n\n}",
+              "tags": [],
+              "image": "",
+              "name": "",
+              "classNameExpressions": [],
+              "style": "",
+              "id": 7721657,
+              "forkedId": 3648543,
+              "children": [
+                {
+                  "type": "element",
+                  "tagName": "div",
+                  "classNames": [
+                    "section-header",
+                    "has-text-centered"
+                  ],
+                  "canHaveChildren": true,
+                  "isVisible": true,
+                  "attributes": "{\n\n}",
+                  "tags": [],
+                  "image": "",
+                  "name": "",
+                  "classNameExpressions": [],
+                  "style": "",
+                  "id": 6855321,
+                  "forkedId": 6342473,
+                  "children": [
+                    {
+                      "type": "element",
+                      "tagName": "h1",
+                      "classNames": [
+                        "title",
+                        "is-spaced"
+                      ],
+                      "canHaveChildren": true,
+                      "isVisible": true,
+                      "attributes": "{\n\n}",
+                      "tags": [],
+                      "image": "",
+                      "name": "",
+                      "classNameExpressions": [],
+                      "style": "",
+                      "id": 7392271,
+                      "forkedId": 4286819,
+                      "children": [
+                        {
+                          "type": "text",
+                          "canHaveChildren": false,
+                          "text": "{props.title}",
+                          "isVisible": true,
+                          "id": 9147807,
+                          "forkedId": 6252001
+                        }
+                      ]
+                    },
+                    {
+                      "type": "if",
+                      "js": "props.subtitle",
+                      "canHaveChildren": true,
+                      "isVisible": true,
+                      "id": 2498600,
+                      "forkedId": 1056409,
+                      "children": [
+                        {
+                          "type": "element",
+                          "tagName": "h2",
+                          "classNames": [
+                            "subtitle"
+                          ],
+                          "canHaveChildren": true,
+                          "isVisible": true,
+                          "attributes": "{\n\n}",
+                          "tags": [],
+                          "image": "",
+                          "name": "",
+                          "classNameExpressions": [],
+                          "style": "",
+                          "id": 8175688,
+                          "forkedId": 7514493,
+                          "children": [
+                            {
+                              "type": "text",
+                              "canHaveChildren": false,
+                              "text": "{props.subtitle}",
+                              "isVisible": true,
+                              "id": 683382,
+                              "forkedId": 6978289
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "element",
+                  "tagName": "div",
+                  "style": "position: relative;\nwidth: 100%;\n\n// Centered\nmargin-left: auto;\nmargin-right: auto;\n\nbackground-color: white;\nbox-shadow: 0 9px 28px rgba(0, 0, 0, 0.24);\nborder-radius: 5px;\noverflow: hidden;",
+                  "name": "Frame",
+                  "canHaveChildren": true,
+                  "isVisible": true,
+                  "attributes": "{\n\n}",
+                  "tags": [],
+                  "image": "",
+                  "classNames": [],
+                  "classNameExpressions": [],
+                  "id": 7883213,
+                  "forkedId": 998289,
+                  "children": [
+                    {
+                      "type": "instance",
+                      "componentId": 9258533,
+                      "attributes": "{\n  // Number of columns (1-4)\n  // Will always be 1 column on mobile\n  columns: 2,\n  // Array of items to display\n  items: [\n    {\n      title: 'Lorem Ipsum',\n      body: 'Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.',\n      image: 'https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/illustrations/fish_bowl_uu88.svg'\n    },\n    {\n      title: 'Lorem Ipsum',\n      body: 'Nunc nulla mauris, laoreet vel cursus lacinia, consectetur sit amet tellus.',\n      image: 'https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/illustrations/directions_x53j.svg'\n    },\n    {\n      title: 'Lorem Ipsum',\n      body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lobortis, metus et mattis ullamcorper',\n      image: 'https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/illustrations/Stability_ball_b4ia.svg'\n    },\n    {\n      title: 'Lorem Ipsum',\n      body: 'Suspendisse ut tincidunt eros. In velit mi, rhoncus dictum neque a, tincidunt lobortis justo',\n      image: 'https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/illustrations/personal_settings_kihd.svg'\n    }\n  ]\n}",
+                      "canHaveChildren": true,
+                      "isVisible": true,
+                      "tags": [],
+                      "image": "",
+                      "inline": true,
+                      "id": 1346167,
+                      "forkedId": 6873980
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "component",
+      "name": "Features",
+      "id": 9258533,
+      "componentType": "function",
+      "canHaveChildren": true,
+      "isVisible": true,
+      "code": "",
+      "defaultProps": "{\n\n}",
+      "initialState": "{\n\n}",
+      "methods": "{\n\n}",
+      "children": [
+        {
+          "type": "element",
+          "tagName": "div",
+          "classNames": [
+            "columns",
+            "is-multiline",
+            "is-centered",
+            "is-gapless"
+          ],
+          "style": "// Overflow hidden hides the bottom and left \n// border of columns (which is actually box-shadow).\noverflow: hidden;",
+          "canHaveChildren": true,
+          "isVisible": true,
+          "attributes": "{\n\n}",
+          "tags": [],
+          "image": "",
+          "name": "",
+          "classNameExpressions": [],
+          "id": 1902727,
+          "forkedId": 4284204,
+          "children": [
+            {
+              "type": "foreach",
+              "objectType": "array",
+              "valName": "item",
+              "indexName": "index",
+              "objectName": "props.items",
+              "canHaveChildren": true,
+              "isVisible": true,
+              "id": 4968829,
+              "forkedId": 419127,
+              "children": [
+                {
+                  "type": "element",
+                  "tagName": "div",
+                  "classNames": [
+                    "column"
+                  ],
+                  "style": "display: flex;\n\n// Make card stretch to height of column so that\n// all cards in a row are the same height.\nalign-items: stretch;\n\n// Center card within column\n// Only has an effect if width of child card\n// is less than 100%.\njustify-content: center;\n\n// Adds bottom and left \"border\" to each column.\n// Container has overflow: hidden so border is not\n// visible on edges (since shadow goes outside container).\nbox-shadow: 1px 1px 0 0 #efefef;",
+                  "attributes": "{\n  key: index\n}",
+                  "classNameExpressions": [
+                    {
+                      "js": "props.columns === 1",
+                      "classNames": [
+                        "is-full"
+                      ]
+                    },
+                    {
+                      "js": "props.columns === 2",
+                      "classNames": [
+                        "is-half"
+                      ]
+                    },
+                    {
+                      "js": "props.columns === 3",
+                      "classNames": [
+                        "is-one-third"
+                      ]
+                    },
+                    {
+                      "js": "props.columns === 4",
+                      "classNames": [
+                        "is-one-quarter"
+                      ]
+                    }
+                  ],
+                  "canHaveChildren": true,
+                  "isVisible": true,
+                  "tags": [],
+                  "image": "",
+                  "name": "",
+                  "id": 5399295,
+                  "forkedId": 8390442,
+                  "children": [
+                    {
+                      "type": "element",
+                      "tagName": "div",
+                      "classNames": [
+                        "has-text-centered"
+                      ],
+                      "style": "width: 100%;\npadding: 60px;",
+                      "name": "Item",
+                      "canHaveChildren": true,
+                      "isVisible": true,
+                      "attributes": "{\n\n}",
+                      "tags": [],
+                      "image": "",
+                      "classNameExpressions": [],
+                      "id": 7282750,
+                      "forkedId": 8572794,
+                      "children": [
+                        {
+                          "type": "element",
+                          "tagName": "figure",
+                          "style": "margin: 0 auto;\nmargin-bottom: 30px;\nmax-width: 180px;",
+                          "classNames": [
+                            "image"
+                          ],
+                          "canHaveChildren": true,
+                          "isVisible": true,
+                          "attributes": "{\n\n}",
+                          "tags": [],
+                          "image": "",
+                          "name": "",
+                          "classNameExpressions": [],
+                          "id": 3623504,
+                          "forkedId": 3801538,
+                          "children": [
+                            {
+                              "type": "element",
+                              "tagName": "img",
+                              "attributes": "{\n  src: item.image\n}",
+                              "canHaveChildren": false,
+                              "isVisible": true,
+                              "tags": [],
+                              "image": "",
+                              "name": "",
+                              "classNames": [],
+                              "classNameExpressions": [],
+                              "style": "",
+                              "id": 2868881,
+                              "forkedId": 1720444
+                            }
+                          ]
+                        },
+                        {
+                          "type": "element",
+                          "tagName": "h1",
+                          "classNames": [
+                            "title",
+                            "is-4",
+                            "is-spaced"
+                          ],
+                          "canHaveChildren": true,
+                          "isVisible": true,
+                          "attributes": "{\n\n}",
+                          "tags": [],
+                          "image": "",
+                          "name": "",
+                          "classNameExpressions": [],
+                          "style": "",
+                          "id": 9789423,
+                          "forkedId": 9992649,
+                          "children": [
+                            {
+                              "type": "text",
+                              "canHaveChildren": false,
+                              "text": "{item.title}",
+                              "isVisible": true,
+                              "id": 7066574,
+                              "forkedId": 8381764
+                            }
+                          ]
+                        },
+                        {
+                          "type": "element",
+                          "tagName": "h2",
+                          "classNames": [
+                            "subtitle",
+                            "is-6"
+                          ],
+                          "canHaveChildren": true,
+                          "isVisible": true,
+                          "attributes": "{\n\n}",
+                          "tags": [],
+                          "image": "",
+                          "name": "",
+                          "classNameExpressions": [],
+                          "style": "",
+                          "id": 4046481,
+                          "forkedId": 3282948,
+                          "children": [
+                            {
+                              "type": "text",
+                              "canHaveChildren": false,
+                              "text": "{item.body}",
+                              "isVisible": true,
+                              "id": 4498151,
+                              "forkedId": 1735852
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "component",
+      "name": "Newsletter Section",
+      "componentType": "function",
+      "code": "\tconst [email, setEmail] = useState('');\n  const [subscribed, setSubscribed] = useState(false);\n  \n  const handleSubmit = () => {\n    if (email){\n      setSubscribed(true);\n      // Add an API call here. For example:\n      //API.newsletterSubscribe({ email });\n    }\n  }\n  ",
+      "id": 6019767,
+      "nameLibrary": "Newsletter Alternate",
+      "canHaveChildren": true,
+      "isVisible": true,
+      "defaultProps": "{\n\n}",
+      "initialState": "{\n\n}",
+      "methods": "{\n\n}",
+      "children": [
+        {
+          "type": "element",
+          "tagName": "section",
+          "classNames": [
+            "section",
+            "is-medium"
+          ],
+          "uses": "893",
+          "canHaveChildren": true,
+          "isVisible": true,
+          "attributes": "{\n\n}",
+          "tags": [],
+          "image": "",
+          "name": "",
+          "classNameExpressions": [],
+          "style": "",
+          "id": 5716134,
+          "forkedId": 2291747,
+          "children": [
+            {
+              "type": "element",
+              "tagName": "div",
+              "classNames": [
+                "container"
+              ],
+              "canHaveChildren": true,
+              "isVisible": true,
+              "attributes": "{\n\n}",
+              "tags": [],
+              "image": "",
+              "name": "",
+              "classNameExpressions": [],
+              "style": "",
+              "id": 7703561,
+              "forkedId": 8399847,
+              "children": [
+                {
+                  "type": "element",
+                  "tagName": "div",
+                  "classNames": [
+                    "columns",
+                    "is-vcentered"
+                  ],
+                  "canHaveChildren": true,
+                  "isVisible": true,
+                  "attributes": "{\n\n}",
+                  "tags": [],
+                  "image": "",
+                  "name": "",
+                  "classNameExpressions": [],
+                  "style": "",
+                  "id": 6334252,
+                  "forkedId": 3140380,
+                  "children": [
+                    {
+                      "type": "element",
+                      "tagName": "div",
+                      "classNames": [
+                        "column"
+                      ],
+                      "canHaveChildren": true,
+                      "isVisible": true,
+                      "attributes": "{\n\n}",
+                      "tags": [],
+                      "image": "",
+                      "name": "",
+                      "classNameExpressions": [],
+                      "style": "",
+                      "id": 5516148,
+                      "forkedId": 4420292,
+                      "children": [
+                        {
+                          "type": "element",
+                          "tagName": "h1",
+                          "classNames": [
+                            "title"
+                          ],
+                          "canHaveChildren": true,
+                          "isVisible": true,
+                          "attributes": "{\n\n}",
+                          "tags": [],
+                          "image": "",
+                          "name": "",
+                          "classNameExpressions": [],
+                          "style": "",
+                          "id": 4230256,
+                          "forkedId": 8060387,
+                          "children": [
+                            {
+                              "type": "text",
+                              "canHaveChildren": false,
+                              "text": "{props.title}",
+                              "tags": [],
+                              "isVisible": true,
+                              "id": 4757764,
+                              "forkedId": 4733255
+                            }
+                          ]
+                        },
+                        {
+                          "type": "element",
+                          "tagName": "p",
+                          "classNames": [
+                            "subtitle",
+                            "is-5",
+                            "has-text-grey"
+                          ],
+                          "canHaveChildren": true,
+                          "isVisible": true,
+                          "attributes": "{\n\n}",
+                          "tags": [],
+                          "image": "",
+                          "name": "",
+                          "classNameExpressions": [],
+                          "style": "",
+                          "id": 7574186,
+                          "forkedId": 8606923,
+                          "children": [
+                            {
+                              "type": "text",
+                              "canHaveChildren": false,
+                              "text": "{props.subtitle}",
+                              "tags": [],
+                              "isVisible": true,
+                              "id": 7007160,
+                              "forkedId": 9158996
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "element",
+                      "tagName": "div",
+                      "classNames": [
+                        "column"
+                      ],
+                      "canHaveChildren": true,
+                      "isVisible": true,
+                      "attributes": "{\n\n}",
+                      "tags": [],
+                      "image": "",
+                      "name": "",
+                      "classNameExpressions": [],
+                      "style": "",
+                      "id": 6390499,
+                      "forkedId": 3878840,
+                      "children": [
+                        {
+                          "type": "if",
+                          "js": "subscribed === false",
+                          "canHaveChildren": true,
+                          "isVisible": true,
+                          "id": 1778847,
+                          "forkedId": 7414942,
+                          "children": [
+                            {
+                              "type": "element",
+                              "tagName": "form",
+                              "attributes": "{\n  onSubmit: (e) => {\n    e.preventDefault();\n    handleSubmit();\n  }\n}",
+                              "canHaveChildren": true,
+                              "isVisible": true,
+                              "tags": [],
+                              "image": "",
+                              "name": "",
+                              "classNames": [],
+                              "classNameExpressions": [],
+                              "style": "",
+                              "id": 1319049,
+                              "forkedId": 8917961,
+                              "children": [
+                                {
+                                  "type": "element",
+                                  "tagName": "div",
+                                  "classNames": [
+                                    "field",
+                                    "is-grouped"
+                                  ],
+                                  "canHaveChildren": true,
+                                  "isVisible": true,
+                                  "attributes": "{\n\n}",
+                                  "tags": [],
+                                  "image": "",
+                                  "name": "",
+                                  "classNameExpressions": [],
+                                  "style": "",
+                                  "id": 5338291,
+                                  "forkedId": 9057399,
+                                  "children": [
+                                    {
+                                      "type": "element",
+                                      "tagName": "div",
+                                      "classNames": [
+                                        "control",
+                                        "is-expanded"
+                                      ],
+                                      "name": "Email",
+                                      "style": "// Make child input and icon same height\ndisplay: flex;\ninput, .icon {\n  height: 100% !important;\n}",
+                                      "classNameExpressions": [
+                                        {
+                                          "js": "props.showInputIcon",
+                                          "classNames": [
+                                            "has-icons-left"
+                                          ]
+                                        }
+                                      ],
+                                      "canHaveChildren": true,
+                                      "isVisible": true,
+                                      "attributes": "{\n\n}",
+                                      "tags": [],
+                                      "image": "",
+                                      "id": 1295765,
+                                      "forkedId": 3436460,
+                                      "children": [
+                                        {
+                                          "type": "element",
+                                          "tagName": "input",
+                                          "canHaveChildren": false,
+                                          "classNames": [
+                                            "input",
+                                            "is-medium",
+                                            "is-flat"
+                                          ],
+                                          "attributes": "{\n  type: 'email',\n  placeholder: props.inputPlaceholder,\n  onChange: (event) => setEmail(event.target.value)\n}",
+                                          "isVisible": true,
+                                          "tags": [],
+                                          "image": "",
+                                          "name": "",
+                                          "classNameExpressions": [],
+                                          "style": "",
+                                          "id": 1686568,
+                                          "forkedId": 9800322
+                                        },
+                                        {
+                                          "type": "if",
+                                          "js": "props.showInputIcon",
+                                          "canHaveChildren": true,
+                                          "isVisible": true,
+                                          "id": 703629,
+                                          "forkedId": 9096557,
+                                          "children": [
+                                            {
+                                              "type": "element",
+                                              "tagName": "span",
+                                              "classNames": [
+                                                "icon",
+                                                "is-small",
+                                                "is-left"
+                                              ],
+                                              "canHaveChildren": true,
+                                              "isVisible": true,
+                                              "attributes": "{\n\n}",
+                                              "tags": [],
+                                              "image": "",
+                                              "name": "",
+                                              "classNameExpressions": [],
+                                              "style": "",
+                                              "id": 6714024,
+                                              "forkedId": 9551611,
+                                              "children": [
+                                                {
+                                                  "type": "element",
+                                                  "tagName": "i",
+                                                  "classNames": [
+                                                    "fas",
+                                                    "fa-envelope"
+                                                  ],
+                                                  "canHaveChildren": false,
+                                                  "isVisible": true,
+                                                  "attributes": "{\n\n}",
+                                                  "tags": [],
+                                                  "image": "",
+                                                  "name": "",
+                                                  "classNameExpressions": [],
+                                                  "style": "",
+                                                  "id": 1308534,
+                                                  "forkedId": 2499176
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "if",
+                                          "js": "props.showSpamFreeArrow",
+                                          "canHaveChildren": true,
+                                          "isVisible": true,
+                                          "id": 2680343,
+                                          "forkedId": 4783953,
+                                          "children": [
+                                            {
+                                              "type": "element",
+                                              "tagName": "img",
+                                              "attributes": "{\n  src: 'https://bulma.io/images/drawing/spam-free.png'\n}",
+                                              "style": "position: absolute;\nbottom: 70%;\nright: 90%;\npointer-events: none;\nwidth: 80px;\ndisplay: none;\n\n// Only show on tablet and above\n@media screen and (min-width: 769px) {\n  display: inline;\n}\n\n// Increase size at desktop and above\n@media screen and (min-width: 1088px) {\n  width: 112px;\n}",
+                                              "name": "Spam Free",
+                                              "canHaveChildren": true,
+                                              "isVisible": true,
+                                              "tags": [],
+                                              "image": "",
+                                              "classNames": [],
+                                              "classNameExpressions": [],
+                                              "id": 8797988,
+                                              "forkedId": 3815955
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "element",
+                                      "tagName": "div",
+                                      "classNames": [
+                                        "control",
+                                        "is-expanded"
+                                      ],
+                                      "canHaveChildren": true,
+                                      "isVisible": true,
+                                      "attributes": "{\n\n}",
+                                      "tags": [],
+                                      "image": "",
+                                      "name": "",
+                                      "classNameExpressions": [],
+                                      "style": "",
+                                      "id": 3192981,
+                                      "forkedId": 3758577,
+                                      "children": [
+                                        {
+                                          "type": "element",
+                                          "tagName": "button",
+                                          "classNames": [
+                                            "button",
+                                            "is-medium",
+                                            "is-link"
+                                          ],
+                                          "canHaveChildren": true,
+                                          "isVisible": true,
+                                          "attributes": "{\n\n}",
+                                          "tags": [],
+                                          "image": "",
+                                          "name": "",
+                                          "classNameExpressions": [],
+                                          "style": "",
+                                          "id": 896453,
+                                          "forkedId": 762671,
+                                          "children": [
+                                            {
+                                              "type": "element",
+                                              "tagName": "strong",
+                                              "canHaveChildren": true,
+                                              "isVisible": true,
+                                              "attributes": "{\n\n}",
+                                              "tags": [],
+                                              "image": "",
+                                              "name": "",
+                                              "classNames": [],
+                                              "classNameExpressions": [],
+                                              "style": "",
+                                              "id": 8114743,
+                                              "forkedId": 8885439,
+                                              "children": [
+                                                {
+                                                  "type": "text",
+                                                  "canHaveChildren": false,
+                                                  "text": "{props.buttonText}",
+                                                  "tags": [],
+                                                  "isVisible": true,
+                                                  "id": 7969123,
+                                                  "forkedId": 5552808
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "if",
+                          "js": "subscribed === true",
+                          "canHaveChildren": true,
+                          "isVisible": true,
+                          "id": 1535451,
+                          "forkedId": 5244992,
+                          "children": [
+                            {
+                              "type": "text",
+                              "canHaveChildren": false,
+                              "text": "{props.subscribedMessage}",
+                              "isVisible": true,
+                              "id": 6226554,
+                              "forkedId": 6281607
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "component",
+      "name": "Blog Section",
+      "componentType": "function",
+      "id": 8566452,
+      "nameLibrary": "Blog Section",
+      "canHaveChildren": true,
+      "isVisible": true,
+      "code": "",
+      "defaultProps": "{\n\n}",
+      "initialState": "{\n\n}",
+      "methods": "{\n\n}",
+      "children": [
+        {
+          "type": "element",
+          "tagName": "section",
+          "classNames": [
+            "section",
+            "has-background-light"
+          ],
+          "description": "",
+          "canHaveChildren": true,
+          "isVisible": true,
+          "attributes": "{\n\n}",
+          "tags": [],
+          "image": "",
+          "name": "",
+          "classNameExpressions": [],
+          "style": "",
+          "id": 4873229,
+          "forkedId": 8432504,
+          "children": [
+            {
+              "type": "element",
+              "tagName": "div",
+              "classNames": [
+                "container"
+              ],
+              "canHaveChildren": true,
+              "isVisible": true,
+              "attributes": "{\n\n}",
+              "tags": [],
+              "image": "",
+              "name": "",
+              "classNameExpressions": [],
+              "style": "",
+              "id": 1014365,
+              "forkedId": 8937995,
+              "children": [
+                {
+                  "type": "instance",
+                  "componentId": 5146623,
+                  "attributes": "{\n\ttitle: \"A Really Interesting Blog Post Title\",\n  date: \"July 31, 2018\",\n  author: {\n    name: \"Diana Low\",\n    avatar: \"http://i.pravatar.cc/150?img=16\",\n    url: \"https://twitter.com\"\n  }\n}",
+                  "canHaveChildren": true,
+                  "isVisible": true,
+                  "tags": [],
+                  "image": "",
+                  "inline": true,
+                  "id": 7196623,
+                  "forkedId": 2624732,
+                  "children": [
+                    {
+                      "type": "element",
+                      "tagName": "p",
+                      "canHaveChildren": true,
+                      "isVisible": true,
+                      "attributes": "{\n\n}",
+                      "tags": [],
+                      "image": "",
+                      "name": "",
+                      "classNames": [],
+                      "classNameExpressions": [],
+                      "style": "",
+                      "id": 7576998,
+                      "forkedId": 787128,
+                      "children": [
+                        {
+                          "type": "text",
+                          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta ac eros sed imperdiet. Pellentesque facilisis rutrum laoreet. Donec at placerat mi. Cras dolor felis, suscipit et eleifend vel, eleifend pulvinar purus. In hac habitasse platea dictumst. Nunc ullamcorper commodo justo, eget ullamcorper tortor rutrum vel. Vestibulum eu elit a mi tempus malesuada vel sit amet ante.",
+                          "tags": [],
+                          "canHaveChildren": true,
+                          "isVisible": true,
+                          "id": 4189247,
+                          "forkedId": 1829060
+                        }
+                      ]
+                    },
+                    {
+                      "type": "element",
+                      "tagName": "p",
+                      "canHaveChildren": true,
+                      "isVisible": true,
+                      "attributes": "{\n\n}",
+                      "tags": [],
+                      "image": "",
+                      "name": "",
+                      "classNames": [],
+                      "classNameExpressions": [],
+                      "style": "",
+                      "id": 4961214,
+                      "forkedId": 3973154,
+                      "children": [
+                        {
+                          "type": "text",
+                          "text": "Quisque quis lacus massa. Phasellus ex augue, pretium eu ex vel, finibus ultricies urna. Etiam quis purus venenatis, eleifend lacus vitae, lobortis dui. Curabitur luctus placerat sollicitudin. Vivamus eleifend tincidunt metus a pellentesque. Sed non ipsum non velit fringilla mollis vel eu odio. Nam dolor tellus, tincidunt venenatis enim quis, consequat egestas nunc. Suspendisse potenti. Nunc in tempus elit. Maecenas consequat turpis aliquet, feugiat dui a, porta est.",
+                          "tags": [],
+                          "canHaveChildren": true,
+                          "isVisible": true,
+                          "id": 2637672,
+                          "forkedId": 350765
+                        }
+                      ]
+                    },
+                    {
+                      "type": "element",
+                      "tagName": "p",
+                      "canHaveChildren": true,
+                      "isVisible": true,
+                      "attributes": "{\n\n}",
+                      "tags": [],
+                      "image": "",
+                      "name": "",
+                      "classNames": [],
+                      "classNameExpressions": [],
+                      "style": "",
+                      "id": 5374506,
+                      "forkedId": 5797921,
+                      "children": [
+                        {
+                          "type": "text",
+                          "text": "Sed accumsan felis sit amet pretium posuere. Nam fermentum consequat sem a finibus. Nullam tempus nunc in enim malesuada accumsan. Etiam eleifend molestie rutrum. Donec viverra, lectus in iaculis varius, nunc nisl bibendum odio, ac maximus purus nibh sed nunc. Etiam malesuada mi sem, ut sagittis neque dictum vel. Vestibulum quis vulputate ipsum. Nunc porttitor congue massa, congue mattis odio sodales ac. Suspendisse potenti. Nulla dictum viverra accumsan. Curabitur tristique sem vitae purus tincidunt, sed congue nibh auctor. Cras et neque sapien. Nam facilisis dignissim tellus at consequat. Sed vel sapien vel dolor consequat sollicitudin. Maecenas eget blandit magna.",
+                          "tags": [],
+                          "canHaveChildren": true,
+                          "isVisible": true,
+                          "id": 20893,
+                          "forkedId": 4570367
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "component",
+      "name": "Blog Post",
+      "componentType": "function",
+      "id": 5146623,
+      "canHaveChildren": true,
+      "isVisible": true,
+      "code": "",
+      "defaultProps": "{\n\n}",
+      "initialState": "{\n\n}",
+      "methods": "{\n\n}",
+      "children": [
+        {
+          "type": "element",
+          "tagName": "article",
+          "style": "max-width: 878px;\nmargin: 0 auto;\nbackground: #fff;\npadding: 75px 50px;\nborder: 1px solid #eaecee;\nposition: relative;\n\n&:not(:last-child){\n  margin-bottom: 100px;\n}",
+          "canHaveChildren": true,
+          "isVisible": true,
+          "attributes": "{\n\n}",
+          "tags": [],
+          "image": "",
+          "name": "",
+          "classNames": [],
+          "classNameExpressions": [],
+          "id": 9182938,
+          "forkedId": 9923948,
+          "children": [
+            {
+              "type": "element",
+              "tagName": "header",
+              "style": "text-align: center;\npadding: 0 50px;\nmargin: 0 auto 45px;",
+              "name": "Header",
+              "canHaveChildren": true,
+              "isVisible": true,
+              "attributes": "{\n\n}",
+              "tags": [],
+              "image": "",
+              "classNames": [],
+              "classNameExpressions": [],
+              "id": 9008977,
+              "forkedId": 6685205,
+              "children": [
+                {
+                  "type": "element",
+                  "tagName": "div",
+                  "classNames": [
+                    "image"
+                  ],
+                  "style": "position: absolute;\ntop: -30px;\nleft: 50%;\nmargin-left: -30px;\nwidth: 70px;\nheight: 70px;\nborder-radius: 50%;\n\n::after {\n  content: \"\";\n  position: absolute;\n  left: 0;\n  top: 0;\n  width: 100%;\n  height: 100%;\n  border-radius: 50%;\n  box-shadow: inset 0 0 0 1px rgba(0,0,0,.1);\n}\n\nimg {\n  width: 100%;\n\theight: 100%;\n\tborder-radius: 50%;\n\tborder: 0;\n}",
+                  "name": "Avatar",
+                  "canHaveChildren": true,
+                  "isVisible": true,
+                  "attributes": "{\n\n}",
+                  "tags": [],
+                  "image": "",
+                  "classNameExpressions": [],
+                  "id": 571779,
+                  "forkedId": 6161493,
+                  "children": [
+                    {
+                      "type": "element",
+                      "tagName": "img",
+                      "attributes": "{\n  src: props.author.avatar\n}",
+                      "canHaveChildren": true,
+                      "isVisible": true,
+                      "tags": [],
+                      "image": "",
+                      "name": "",
+                      "classNames": [],
+                      "classNameExpressions": [],
+                      "style": "",
+                      "id": 7765114,
+                      "forkedId": 1291120
+                    }
+                  ]
+                },
+                {
+                  "type": "element",
+                  "tagName": "h1",
+                  "style": "a {\n  color: inherit;\n}",
+                  "classNames": [
+                    "title",
+                    "has-text-weight-normal",
+                    "is-spaced",
+                    "is-size-4-mobile"
+                  ],
+                  "canHaveChildren": true,
+                  "isVisible": true,
+                  "attributes": "{\n\n}",
+                  "tags": [],
+                  "image": "",
+                  "name": "",
+                  "classNameExpressions": [],
+                  "id": 7838241,
+                  "forkedId": 5348297,
+                  "children": [
+                    {
+                      "type": "element",
+                      "tagName": "a",
+                      "attributes": "{\n  href: '/' \n}",
+                      "canHaveChildren": true,
+                      "isVisible": true,
+                      "tags": [],
+                      "image": "",
+                      "name": "",
+                      "classNames": [],
+                      "classNameExpressions": [],
+                      "style": "",
+                      "id": 912379,
+                      "forkedId": 2032042,
+                      "children": [
+                        {
+                          "type": "text",
+                          "text": "{props.title}",
+                          "tags": [],
+                          "canHaveChildren": true,
+                          "isVisible": true,
+                          "id": 8872546,
+                          "forkedId": 1222737
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "element",
+                  "tagName": "p",
+                  "style": "color: #939da3;",
+                  "classNames": [
+                    "subtitle",
+                    "is-6"
+                  ],
+                  "canHaveChildren": true,
+                  "isVisible": true,
+                  "attributes": "{\n\n}",
+                  "tags": [],
+                  "image": "",
+                  "name": "",
+                  "classNameExpressions": [],
+                  "id": 8440748,
+                  "forkedId": 6105088,
+                  "children": [
+                    {
+                      "type": "element",
+                      "tagName": "a",
+                      "attributes": "{\n\thref: props.author.url\n}",
+                      "classNames": [
+                        "author"
+                      ],
+                      "canHaveChildren": true,
+                      "isVisible": true,
+                      "tags": [],
+                      "image": "",
+                      "name": "",
+                      "classNameExpressions": [],
+                      "style": "",
+                      "id": 465900,
+                      "forkedId": 3867711,
+                      "children": [
+                        {
+                          "type": "text",
+                          "text": "{props.author.name}",
+                          "tags": [],
+                          "canHaveChildren": true,
+                          "isVisible": true,
+                          "id": 9794944,
+                          "forkedId": 7201612
+                        }
+                      ]
+                    },
+                    {
+                      "type": "element",
+                      "tagName": "span",
+                      "name": "Date",
+                      "style": "margin-left: 10px;",
+                      "canHaveChildren": true,
+                      "isVisible": true,
+                      "attributes": "{\n\n}",
+                      "tags": [],
+                      "image": "",
+                      "classNames": [],
+                      "classNameExpressions": [],
+                      "id": 9611657,
+                      "forkedId": 4294064,
+                      "children": [
+                        {
+                          "type": "text",
+                          "text": "{props.date}",
+                          "tags": [],
+                          "canHaveChildren": true,
+                          "isVisible": true,
+                          "id": 1395629,
+                          "forkedId": 737715
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "tagName": "div",
+              "classNames": [
+                "content"
+              ],
+              "style": "max-width: 640px;\nmargin: 0 auto;\ncolor: #4c555a;",
+              "canHaveChildren": true,
+              "isVisible": true,
+              "attributes": "{\n\n}",
+              "tags": [],
+              "image": "",
+              "name": "",
+              "classNameExpressions": [],
+              "id": 7185181,
+              "forkedId": 3089225,
+              "children": [
+                {
+                  "type": "children",
+                  "canHaveChildren": true,
+                  "isVisible": true,
+                  "id": 8352578,
+                  "forkedId": 3940368
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

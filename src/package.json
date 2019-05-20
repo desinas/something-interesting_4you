@@ -1,0 +1,30 @@
+{
+  "version": "1.0.0",
+  "scripts": {
+    "test": "react-scripts test --env=jsdom",
+    "start": "react-scripts start",
+    "eject": "react-scripts eject",
+    "build": "react-scripts build"
+  },
+  "name": "my-divjoy-project",
+  "main": "src/index.js",
+  "keywords": [
+    "divjoy"
+  ],
+  "devDependencies": {},
+  "description": "",
+  "dependencies": {
+    "react-scripts": "2.0.3",
+    "react-router-dom": "4.3.1",
+    "react-dom": "16.8.0",
+    "react": "16.8.0",
+    "history": "latest",
+    "bulma": "0.7.2"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

@@ -1,0 +1,27 @@
+.NewsletterSection__email {
+  // Make child input and icon same height
+  display: flex;
+  input,
+  .icon {
+    height: 100% !important;
+  }
+}
+
+.NewsletterSection__spam-free {
+  position: absolute;
+  bottom: 70%;
+  right: 90%;
+  pointer-events: none;
+  width: 80px;
+  display: none;
+
+  // Only show on tablet and above
+  @media screen and (min-width: 769px) {
+    display: inline;
+  }
+
+  // Increase size at desktop and above
+  @media screen and (min-width: 1088px) {
+    width: 112px;
+  }
+}
